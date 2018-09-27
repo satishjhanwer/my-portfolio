@@ -115,7 +115,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       name: 'app',
       async: 'vendor-async',
       children: true,
-      minChunks: 3
+      minChunks: Infinity
     }),
 
     // copy custom static assets
@@ -148,10 +148,11 @@ const webpackConfig = merge(baseWebpackConfig, {
       ]
     }),
     new SWPrecacheWebpackPlugin({
+      cacheId: 'satish-portfolio',
       dontCacheBustUrlsMatching: /\.\w{8}\./,
-      filename: 'serviceWorker.js',
+      filename: 'service-worker.js',
       minify: true,
-      staticFileGlobsIgnorePatterns: [/\.map$/]
+      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
     })
   ]
 });
