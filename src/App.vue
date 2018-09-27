@@ -46,7 +46,7 @@
           <p class="mb-5">{{ aboutMe }}</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item" v-for="soc in social" :key="soc.name">
-              <a v-bind:href="''+ soc.url +''" target="_blank">
+              <a v-bind:href="''+ soc.url +''" target="_blank" rel="noreferrer">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i v-bind:class="'fa '+ soc.icon +' fa-stack-1x fa-inverse'"></i>
