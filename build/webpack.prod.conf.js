@@ -137,13 +137,14 @@ const webpackConfig = merge(baseWebpackConfig, {
       short_name: 'My Portfolio',
       description: 'My Portfolio',
       background_color: '#ffffff',
+      'theme-color': '#ffffff',
       crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
       ios: true,
       icons: [
         {
           src: path.resolve('src/assets/profile.jpg'),
           destination: 'favicons',
-          sizes: [72, 96, 120, 128, 144, 152, 167, 180, 192] // multiple sizes
+          sizes: [72, 96, 120, 128, 144, 152, 167, 180, 192, 512] // multiple sizes
         }
       ]
     }),
