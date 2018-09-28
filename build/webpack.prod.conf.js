@@ -137,7 +137,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       short_name: 'My Portfolio',
       description: 'My Portfolio',
       background_color: '#ffffff',
-      'theme-color': '#ffffff',
+      theme_color: '#ffffff',
       crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
       ios: true,
       icons: [
