@@ -4,7 +4,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#about">
         <span class="d-block d-lg-none">My Portfolio</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="photo">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
           <p class="mb-5">{{ aboutMe }}</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item" v-for="soc in social" :key="soc.name">
-              <a v-bind:href="''+ soc.url +''" target="_blank" rel="noreferrer">
+              <a v-bind:href="''+ soc.url +''" target="_blank" rel="noreferrer" v-bind:aria-labelledby="''+ soc.name +''">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i v-bind:class="'fa '+ soc.icon +' fa-stack-1x fa-inverse'"></i>
@@ -128,7 +128,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       title: 'My Portfolio',
       name: 'SATISH',
@@ -362,22 +362,22 @@ export default {
           company: 'Sigma Infosolutions Ltd'
         }
       ]
-    }
+    };
   },
-  mounted () {
-    const $ = this.jquery
+  mounted() {
+    const $ = this.jquery;
     this.$nextTick(() => {
       // our custom jQuery code goes here
-      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (
           location.pathname.replace(/^\//, '') ===
             this.pathname.replace(/^\//, '') &&
           location.hostname === this.hostname
         ) {
-          var target = $(this.hash)
+          var target = $(this.hash);
           target = target.length
             ? target
-            : $('[name=' + this.hash.slice(1) + ']')
+            : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
             $('html, body').animate(
               {
@@ -385,24 +385,24 @@ export default {
               },
               1000,
               'easeInOutExpo'
-            )
-            return false
+            );
+            return false;
           }
         }
-      })
+      });
 
       // Closes responsive menu when a scroll trigger link is clicked
-      $('.js-scroll-trigger').click(function () {
-        $('.navbar-collapse').collapse('hide')
-      })
+      $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
 
       // Activate scrollspy to add active class to navbar items on scroll
       $('body').scrollspy({
         target: '#sideNav'
-      })
-    })
+      });
+    });
   }
-}
+};
 </script>
 
 <style>
