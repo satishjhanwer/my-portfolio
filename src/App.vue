@@ -2,7 +2,7 @@
   <div class="main-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#about">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">My Portfolio</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="">
         </span>
@@ -245,7 +245,7 @@ export default {
         {
           name: 'mongodb',
           icon: 'devicons-mongodb',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'code',
@@ -255,27 +255,27 @@ export default {
         {
           name: 'ubuntu',
           icon: 'devicons-ubuntu',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'bower',
           icon: 'devicons-bower',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'yeoman',
           icon: 'devicons-yeoman',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'grails',
           icon: 'devicons-grails',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'groovy',
           icon: 'devicons-groovy',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'git',
@@ -290,12 +290,12 @@ export default {
         {
           name: 'jira',
           icon: 'devicons-jira',
-          level: 'Upper Beignner'
+          level: 'Upper Beginner'
         },
         {
           name: 'go',
           icon: 'devicons-go',
-          level: 'Beignner'
+          level: 'Beginner'
         },
         {
           name: 'jquery',
