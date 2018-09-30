@@ -337,7 +337,7 @@ export default {
         },
         {
           id: 5,
-          text: 'Unit Testing'
+          text: 'Unit & Functional Testing'
         }
       ],
       interest:
