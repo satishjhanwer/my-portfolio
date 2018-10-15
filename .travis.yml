@@ -17,7 +17,7 @@ deploy:
   local_dir: /dist
   github-token: $GITHUB_TOKEN
   repo: satishjhanwer/testing-travisci
-  keep-history: true
+  keep-history: false
   target-branch: master
   on:
     branch: master
