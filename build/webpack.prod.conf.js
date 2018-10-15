@@ -124,6 +124,16 @@ const webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../sitemap.xml'),
+        to: config.build.assetsRoot,
+        ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../robots.txt'),
+        to: config.build.assetsRoot,
+        ignore: ['.*']
       }
     ]),
     new PrerenderSpaPlugin(
