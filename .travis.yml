@@ -17,7 +17,8 @@ deploy:
   local_dir: /dist
   github-token: $GITHUB_TOKEN
   repo: $GITHUB_REPO
-  committer-from-gh: true
+  email: $GITHUB_EMAIL
+  name: $GITHUB_NAME
   keep-history: true
   target-branch: master
   on:
