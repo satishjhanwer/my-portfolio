@@ -1,10 +1,12 @@
 # my-portfolio
 
+[![Build Status](https://travis-ci.org/satishjhanwer/my-portfolio.svg?branch=master)](https://travis-ci.org/satishjhanwer/my-portfolio)
+
 > my portfolio
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
