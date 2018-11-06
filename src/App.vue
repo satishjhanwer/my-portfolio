@@ -1,142 +1,48 @@
 <template>
   <div class="main-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#about">
-        <span class="d-block d-lg-none">My Portfolio</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="photo">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar landing-link="#about" :navItems="navItems" id="sideNav"></Navbar>
     <div class="container-fluid p-0">
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <div class="subheading">Hi there! I'm</div>
-          <h1 class="mb-0">{{ name }}
-            <span class="text-primary">{{ surname }}</span>
-          </h1>
-          <div class="subheading mb-5">{{ address }}
-            <a v-bind:href="'mailto:'+email+''">{{ email }}</a>
-          </div>
-          <p class="mb-5">{{ aboutMe }}</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item" v-for="soc in social" :key="soc.name">
-              <a v-bind:href="''+ soc.url +''" target="_blank" rel="noreferrer" v-bind:aria-label="''+ soc.name +''">
-                <span class="fa-stack fa-lg" v-bind:title="''+ soc.name +''">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i v-bind:class="'fa '+ soc.icon +' fa-stack-1x fa-inverse'" v-bind:title="''+ soc.name +''"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="job in experience" :key="job.position">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">{{ job.position }}</h3>
-              <div class="subheading mb-3">{{ job.company }}</div>
-              <p>{{ job.description }}</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="edu in education" :key="edu.degree">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">{{ edu.name }}</h3>
-              <div class="subheading mb-3">{{ edu.degree }}</div>
-              <div>{{ edu.stream }}</div>
-              <p>{{ edu.marks }}</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">{{ edu.startDate }} - {{ edu.endDate }}</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item" v-for="skill in skills" :key="skill.name">
-              <i v-bind:class="'devicons '+ skill.icon +''" v-bind:title="''+ skill.level +''"></i>
-            </li>
-          </ul>
-          <div class="subheading mb-3">Job Related Responsibility</div>
-          <ul class="fa-ul mb-0">
-            <li v-for="role in responsibility" :key="role.id">
-              <i class="fa-li fa fa-check"></i>
-              {{ role.text }}
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p class="mb-0"> {{ interest }}</p>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li v-for="acc in accomplishment" :key="acc.id">
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              {{ acc.text }} - {{ acc.company }} - {{ acc.date }}
-            </li>
-          </ul>
-        </div>
-      </section>
+      <AboutMe :user="user" :social="social" id="about"></AboutMe>
+      <Experience :experience="experience" id="experience"></Experience>
+      <Education :education="education" id="education"></Education>
+      <Skills :skills="skills" :responsibility="responsibility" id="skills"></Skills>
+      <Interests :interest="interest" id="interests"></Interests>
+      <Awards :accomplishment="accomplishment" id="awards"></Awards>
     </div>
   </div>
 </template>
 
 <script>
+
+import Navbar from './components/Navbar.vue'
+import Skills from './components/Skills.vue'
+import Awards from './components/Awards.vue'
+import AboutMe from './components/AboutMe.vue'
+import Education from './components/Education.vue'
+import Interests from './components/Interests.vue'
+import Experience from './components/Experience.vue'
+
 export default {
+  components: { Navbar, Skills, Awards, AboutMe, Education, Interests, Experience },
   data () {
     return {
       title: 'My Portfolio',
-      name: 'SATISH',
-      surname: 'JHANWER',
-      address: 'Ahmedabad, Gujarat 380013 · +91 (704) 339-4934 ·',
-      email: 'satish.jhanwer@gmail.com',
-      aboutMe:
-        'Senior Full Stack Developer, Currently working on technology which includes Node.JS, React.JS, Golang, ExpressJS, jQuery, REST API etc.',
+      navItems: [
+        {title: 'About', link: '#about'},
+        {title: 'Experience', link: '#experience'},
+        {title: 'Education', link: '#education'},
+        {title: 'Skills', link: '#skills'},
+        {title: 'Interests', link: '#interests'},
+        {title: 'Awards', link: '#awards'}
+      ],
+      user: {
+        name: 'SATISH',
+        surname: 'JHANWER',
+        address: 'Ahmedabad, Gujarat 380013 · +91 (704) 339-4934 ·',
+        email: 'satish.jhanwer@gmail.com',
+        introduction:
+          'Associate Technical Architect, Currently working on technology which includes Node.JS, React.JS, Golang, ExpressJS, MongoDB, Docker, Kubernetes, Microservices, REST API etc.'
+      },
       social: [
         {
           name: 'facebook',
@@ -161,18 +67,26 @@ export default {
       ],
       experience: [
         {
+          position: 'Associate Technical Architect',
+          company: 'Sigma Infosolutions Ltd.',
+          description:
+            'Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Providing End to End solutions for the complex problem.',
+          startDate: 'Sep 2018',
+          endDate: 'Present'
+        },
+        {
           position: 'Senior Software Engineer',
           company: 'Sigma Infosolutions Ltd.',
           description:
-            'Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager',
+            'Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager.',
           startDate: 'Apr 2013',
-          endDate: 'Present'
+          endDate: 'Aug 2018'
         },
         {
           position: 'Software Engineer',
           company: 'Sigma Infosolutions Ltd.',
           description:
-            'Research and development of Groovy & Grails. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager',
+            'Research and development of Groovy & Grails. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager.',
           startDate: 'Apr 2012',
           endDate: 'Mar 2013'
         },
@@ -180,7 +94,7 @@ export default {
           position: 'Associate Software Engineer',
           company: 'Sigma Infosolutions Ltd.',
           description:
-            'Research and development of Groovy & Grails. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager',
+            'Research and development of Groovy & Grails. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager.',
           startDate: 'Oct 2010',
           endDate: 'Mar 2012'
         }
