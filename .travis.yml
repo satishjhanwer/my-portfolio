@@ -5,6 +5,7 @@ install:
   - npm install -g @vue/cli
 script:
   - npm install
+  - npm audit fix --force
   - npm run build
 cache:
   directories:
