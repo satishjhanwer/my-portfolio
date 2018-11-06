@@ -15,7 +15,7 @@ notifications:
 deploy:
   provider: pages
   skip-cleanup: true
-  local-dir: /dist
+  local-dir: $TRAVIS_BUILD_DIR/dist
   github-token: $GITHUB_TOKEN
   repo: $GITHUB_REPO
   email: $GITHUB_EMAIL
