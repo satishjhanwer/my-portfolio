@@ -72,7 +72,7 @@ export default {
           description:
             'Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Providing End to End solutions for the complex problem.',
           startDate: 'Sep 2018',
-          endDate: 'Present'
+          endDate: 'Dec 2018'
         },
         {
           position: 'Senior Software Engineer',
