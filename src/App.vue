@@ -38,7 +38,7 @@ export default {
       user: {
         name: 'SATISH',
         surname: 'JHANWER',
-        address: 'Ahmedabad, Gujarat 380013 · +91 (704) 339-4934 ·',
+        address: 'Pune, Maharashtra 411057 · +91 (704) 339-4934 ·',
         email: 'satish.jhanwer@gmail.com',
         introduction:
           'Sr. UI Developer, Currently working on technology which includes Node.JS, React.JS, Golang, ExpressJS, MongoDB, Docker, Kubernetes, Microservices, REST API etc.'
