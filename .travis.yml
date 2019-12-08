@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - '8'
+  - "8"
 install:
   - npm install -g @vue/cli
 script:
   - npm install
-  - npm audit fix --force
+  - npm audit fix
   - npm run build
 cache:
   directories:
-    - 'node_modules'
+    - "node_modules"
 notifications:
   email: false
 deploy:
