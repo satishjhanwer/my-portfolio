@@ -29,9 +29,9 @@
     "user": {
         "name": "SATISH",
         "surname": "JHANWER",
-        "address": "Jodhpur, Rajasthan 342008· +91 (704) 339-4934·",
+        "address": "Jodhpur, Rajasthan 342008·",
         "email": "satish.jhanwer@gmail.com",
-        "introduction": "Sr. UI Developer, Currently working on technology which includes Node.JS, React.JS, Golang, ExpressJS, MongoDB, Docker, Kubernetes, Microservice, REST API etc."
+        "introduction": "Associate Architect, Currently working on technology which includes Node.JS, React.JS, Golang, ExpressJS, MongoDB, Docker, Kubernetes, Microservice, REST API etc."
     },
     "social": [
         {
@@ -55,8 +55,8 @@
         },
         {
             "position": "Senior UI Developer",
-            "company": "Barclays",
-            "description": "Working on technology which includes Node.JS, React.JS, Typescript, ExpressJS, Microservice, REST API etc",
+            "company": "Barclays Technology Centre India, Pune",
+            "description": "Worked on MCA(Multi Channel Application) Framework. This is layered framework consisting 3 layers- UI, Secure Proxy, and Service Layer. Different mini apps are developed using this framework and then are consumed by end users. UI mini app is designed using either ReactJS or AngularJS using the MCA Framework.",
             "startDate": "Dec 2018",
             "endDate": "Jan 2022"
         },

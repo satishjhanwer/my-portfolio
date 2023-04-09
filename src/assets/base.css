@@ -180,6 +180,10 @@ section.resume-section {
   padding-bottom: 5rem !important;
 }
 
+section.resume-section .resume-item {
+  justify-content: space-between;
+}
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
