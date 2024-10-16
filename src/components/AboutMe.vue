@@ -1,22 +1,19 @@
-<script setup>
-defineProps({
-  id: {
-    type: String,
-    required: true,
-  },
-  social: {
-    type: Array,
-    required: true,
-  },
+<script setup lang="ts">
+defineProps<{
+  id: string;
+  social: Array<{
+    url: string;
+    name: string;
+    icon: string;
+  }>;
   user: {
-    type: Object,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-});
+    name: string;
+    email: string;
+    address: string;
+    surname: string;
+    introduction: string;
+  };
+}>();
 </script>
 
 <template>
@@ -34,18 +31,10 @@ defineProps({
       <p class="mb-5">{{ user.introduction }}</p>
       <ul class="list-inline list-social-icons mb-0">
         <li class="list-inline-item" v-for="soc in social" :key="soc.name">
-          <a
-            :href="'' + soc.url + ''"
-            target="_blank"
-            rel="noreferrer"
-            :aria-label="'' + soc.name + ''"
-          >
+          <a :href="'' + soc.url + ''" target="_blank" rel="noreferrer" :aria-label="'' + soc.name + ''">
             <span class="fa-stack fa-lg" :title="'' + soc.name + ''">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i
-                :class="'fa ' + soc.icon + ' fa-stack-1x fa-inverse'"
-                :title="'' + soc.name + ''"
-              ></i>
+              <i :class="'fa ' + soc.icon + ' fa-stack-1x fa-inverse'" :title="'' + soc.name + ''"></i>
             </span>
           </a>
         </li>

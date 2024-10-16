@@ -1,18 +1,16 @@
-<script setup>
-defineProps({
-  id: {
-    type: String,
-    required: true,
-  },
-  skills: {
-    type: Array,
-    required: true,
-  },
-  responsibility: {
-    type: Array,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  id: string;
+  skills: Array<{
+    name: string;
+    icon: string;
+    level: string;
+  }>;
+  responsibility: Array<{
+    id: number;
+    text: string;
+  }>;
+}>();
 </script>
 
 <template>
@@ -22,10 +20,7 @@ defineProps({
       <div class="subheading mb-3">Programming Languages & Tools</div>
       <ul class="list-inline list-icons">
         <li class="list-inline-item" v-for="skill in skills" :key="skill.name">
-          <i
-            :class="'devicons ' + skill.icon + ''"
-            :title="'' + skill.level + ''"
-          ></i>
+          <i :class="'devicons ' + skill.icon + ''" :title="'' + skill.level + ''"></i>
         </li>
       </ul>
       <div class="subheading mb-3">Job Related Responsibility</div>

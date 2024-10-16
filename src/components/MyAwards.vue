@@ -1,16 +1,14 @@
-<script setup>
-defineProps({
-  id: {
-    type: String,
-    required: true,
-  },
-  accomplishment: {
-    type: Array,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  id: string;
+  accomplishment: Array<{
+    id: number;
+    date: string;
+    text: string;
+    company: string;
+  }>;
+}>();
 </script>
-
 <template>
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" :id="id">
     <div class="my-auto">

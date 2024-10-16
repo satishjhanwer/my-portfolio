@@ -4,32 +4,23 @@
   "description": "my portfolio",
   "author": "Satish Jhanwer",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "dependencies": {
-    "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.3",
     "devicons": "^1.8.0",
     "font-awesome": "^4.7.0",
-    "vue": "^3.2.47"
+    "vue": "^3.5.10"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.2.0",
-    "@vitejs/plugin-vue": "^3.0.1",
-    "@vue/eslint-config-prettier": "^7.1.0",
-    "eslint": "^8.38.0",
-    "eslint-plugin-vue": "^9.10.0",
-    "prettier": "^2.8.7",
-    "vite": "^3.0.5",
-    "vite-plugin-pwa": "^0.12.3"
-  }
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

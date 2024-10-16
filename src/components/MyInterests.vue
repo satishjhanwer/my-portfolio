@@ -1,14 +1,8 @@
-<script setup>
-defineProps({
-  id: {
-    type: String,
-    required: true,
-  },
-  interest: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+defineProps<{
+  id: string;
+  interest: string;
+}>();
 </script>
 
 <template>
