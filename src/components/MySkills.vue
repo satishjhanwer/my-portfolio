@@ -20,7 +20,7 @@ defineProps<{
       <div class="subheading mb-3">Programming Languages & Tools</div>
       <ul class="list-inline list-icons">
         <li class="list-inline-item" v-for="skill in skills" :key="skill.name">
-          <i :class="'devicons ' + skill.icon + ''" :title="'' + skill.level + ''"></i>
+          <i :class="skill.icon + ' colored'" :title="'' + skill.level + ''"></i>
         </li>
       </ul>
       <div class="subheading mb-3">Job Related Responsibility</div>

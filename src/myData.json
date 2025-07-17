@@ -30,8 +30,8 @@
     "name": "SATISH",
     "surname": "JHANWER",
     "address": "Jodhpur, Rajasthan 342008·",
-    "email": "satish.jhanwer@gmail.com",
-    "introduction": "Associate Architect, Currently working on technology which includes Node.JS, React.JS, Golang, ExpressJS, MongoDB, Docker, Kubernetes, Microservice, REST API etc."
+    "email": "satish.jhanwer@outlook.com",
+    "introduction": "Frontend Architect, with 14+ years building and owning scalable shared component libraries and modern web applications. Proven track record of partnering with Product & Design to prototype and deliver accessible, high-performance UI components via CI/CD pipelines (Storybook, Jenkins). Experienced with Node.js and Express for REST APIs and backend integrations, boosting end-to-end delivery speed. Skilled in WCAG-compliant accessibility, React Router/Query, and TDD with Jest, React Testing Library, and Mocha."
   },
   "social": [
     {
@@ -48,50 +48,76 @@
   "experience": [
     {
       "position": "Associate Architect",
-      "company": "Sigma Infosolutions Ltd.",
-      "description": "Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Providing End to End solutions for the complex problem.",
+      "company": "Sigma Infosolutions Ltd., Jodhpur, Rajasthan",
+      "description": [
+        "Built & owned a React+TypeScript shared component library (Storybook-driven) used by 10+ application teams, integrating CI/CD pipelines for automatic releases and versioning.",
+        "Partnered with Product & Design in agile sprints to prototype and iterate UI solutions, reducing design-to-dev handoff time by 25%.",
+        "Optimized developer experience by authoring TypeScript definitions, example apps, and comprehensive docs—cutting onboarding time by 40%.",
+        "Implemented automated testing with Jest & React Testing Library at component level, achieving 95% coverage and preventing regressions.",
+        "Optimized Webpack build configurations for faster CI/CD pipelines, reducing deployment time by 40%.",
+        "Developed RESTful APIs with Node.js/Express.js, integrating with MongoDB & PostgreSQL, reducing data retrieval time by 35%.",
+        "Mentored junior developers on Node.js backend best practices, code reviews, and Express middleware patterns."
+      ],
       "startDate": "Jan 2022",
       "endDate": "Till Now"
     },
     {
       "position": "Senior UI Developer",
-      "company": "Barclays Technology Centre India, Pune",
-      "description": "Worked on MCA(Multi Channel Application) Framework. This is layered framework consisting 3 layers- UI, Secure Proxy, and Service Layer. Different mini apps are developed using this framework and then are consumed by end users. UI mini app is designed using either ReactJS or AngularJS using the MCA Framework.",
+      "company": "Barclays LLC, Pune, Maharashtra",
+      "description": [
+        "Resolved complex frontend challenges through cross-team collaboration, reducing issue resolution time by 40%.",
+        "Implemented technologies to address client-specific needs, boosting project efficiency by 20%.",
+        "Designed a scalable UI framework, improving user satisfaction by 30% across multiple banking platforms.",
+        "Led migration of legacy UI modules to React/TypeScript, integrating React Router & React Query to streamline data fetching and client-side routing, boosting page load performance by 20%.",
+        "Engineered accessibility (WCAG 2.1 AA) into all components, performing automated audits (Axe, Lighthouse) and remediating violations."
+      ],
       "startDate": "Dec 2018",
       "endDate": "Jan 2022"
     },
     {
-      "position": "Associate Technical Architect",
-      "company": "Sigma Infosolutions Ltd.",
-      "description": "Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Providing End to End solutions for the complex problem.",
-      "startDate": "Sep 2018",
+      "position": "Senior Software Engineer",
+      "company": "Sigma Infosolutions Ltd., Ahmedabad, Gujarat",
+      "description": [
+        "Developed and deployed user interfaces, enhancing web application functionality and increasing user engagement by 25%.",
+        "Conducted technical sessions that helped junior developers increase their debugging efficiency by 30%.",
+        "Coordinated team efforts to deliver high-priority projects, achieving a 100% on-time completion rate.",
+        "Championed the adoption of technologies through market analysis, cutting project costs by 15%."
+      ],
+      "startDate": "Apr 2013",
       "endDate": "Dec 2018"
     },
     {
-      "position": "Senior Software Engineer",
-      "company": "Sigma Infosolutions Ltd.",
-      "description": "Research and development of Golang, NodeJS, ReactJS. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager.",
-      "startDate": "Apr 2013",
-      "endDate": "Aug 2018"
-    },
-    {
       "position": "Software Engineer",
-      "company": "Sigma Infosolutions Ltd.",
-      "description": "Research and development of Groovy & Grails. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager.",
+      "company": "Sigma Infosolutions Ltd., Bangalore, Karnataka",
+      "description": [
+        "Developed, tested, and debugged applications using Groovy, JavaScript, jQuery, HTML, and CSS, improving performance by 20%.",
+        "Proposed and implemented improvements aligned with industry standards, resulting in a 15% increase in efficiency."
+      ],
       "startDate": "Apr 2012",
       "endDate": "Mar 2013"
     },
     {
       "position": "Associate Software Engineer",
-      "company": "Sigma Infosolutions Ltd.",
-      "description": "Research and development of Groovy & Grails. Designing and implementing software component assigned Write Unit Test case for the component built Do Code Review of the feature built by other team members Help team members technically whenever needed Process awareness for software development and implementing it Involvement in the recruitment process. Other Business activities as defined by Project Manager.",
+      "company": "Sigma Infosolutions Ltd., Bangalore, Karnataka",
+      "description": [
+        "Developed, tested, and debugged applications using Groovy, JavaScript, jQuery, HTML, and CSS, improving performance by 20%.",
+        "Proposed and implemented improvements aligned with industry standards, resulting in a 15% increase in efficiency."
+      ],
       "startDate": "Oct 2010",
       "endDate": "Mar 2012"
     }
   ],
   "education": [
     {
-      "name": "Rajasthan Technical University",
+      "name": "Indian Institute of Technology Jodhpur",
+      "degree": "Master of Technology",
+      "stream": "AI/ML",
+      "marks": "8.5 CGPA (Till 2nd Semester)",
+      "startDate": "Jul 2024",
+      "endDate": "Jul 2026"
+    },
+    {
+      "name": "Rajasthan Technical University, Kota",
       "degree": "Bachelor of Technology",
       "stream": "Information Technology",
       "marks": "75%",
@@ -117,108 +143,173 @@
   ],
   "skills": [
     {
+      "name": "typescript",
+      "icon": "devicon-typescript-plain",
+      "level": "Proficient"
+    },
+    {
       "name": "javascript",
-      "icon": "devicons-javascript",
+      "icon": "devicon-javascript-plain",
       "level": "Proficient"
     },
     {
       "name": "react",
-      "icon": "devicons-react",
+      "icon": "devicon-react-original",
       "level": "Proficient"
     },
     {
       "name": "nodejs",
-      "icon": "devicons-nodejs",
+      "icon": "devicon-nodejs-plain-wordmark",
       "level": "Proficient"
     },
     {
       "name": "html",
-      "icon": "devicons-html5",
+      "icon": "devicon-html5-plain",
       "level": "Proficient"
     },
     {
       "name": "css3",
-      "icon": "devicons-css3",
+      "icon": "devicon-css3-plain",
       "level": "Proficient"
     },
     {
-      "name": "docker",
-      "icon": "devicons-docker",
+      "name": "vuejs",
+      "icon": "devicon-vuejs-plain",
       "level": "Proficient"
     },
     {
-      "name": "mongodb",
-      "icon": "devicons-mongodb",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "code",
-      "icon": "devicons-code",
+      "name": "redux",
+      "icon": "devicon-redux-original",
       "level": "Proficient"
     },
     {
-      "name": "ubuntu",
-      "icon": "devicons-ubuntu",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "bower",
-      "icon": "devicons-bower",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "yeoman",
-      "icon": "devicons-yeoman",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "grails",
-      "icon": "devicons-grails",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "groovy",
-      "icon": "devicons-groovy",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "git",
-      "icon": "devicons-git",
+      "name": "vite",
+      "icon": "devicon-vite-plain",
       "level": "Proficient"
     },
     {
-      "name": "bitbucket",
-      "icon": "devicons-bitbucket",
+      "name": "vitejs",
+      "icon": "devicon-vitejs-plain",
       "level": "Proficient"
     },
     {
-      "name": "jira",
-      "icon": "devicons-jira",
-      "level": "Upper Beginner"
-    },
-    {
-      "name": "go",
-      "icon": "devicons-go",
-      "level": "Beginner"
-    },
-    {
-      "name": "jquery",
-      "icon": "devicons-jquery",
+      "name": "vitest",
+      "icon": "devicon-vitest-plain",
       "level": "Proficient"
     },
     {
-      "name": "grunt",
-      "icon": "devicons-grunt",
+      "name": "storybook",
+      "icon": "devicon-storybook-plain",
       "level": "Proficient"
     },
     {
-      "name": "gulp",
-      "icon": "devicons-gulp",
+      "name": "react-router",
+      "icon": "devicon-reactrouter-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "webpack",
+      "icon": "devicon-webpack-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "babel",
+      "icon": "devicon-babel-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "eslint",
+      "icon": "devicon-eslint-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "express.js",
+      "icon": "devicon-express-original",
+      "level": "Proficient"
+    },
+    {
+      "name": "graphql",
+      "icon": "devicon-graphql-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "socket.io",
+      "icon": "devicon-socketio-original",
       "level": "Proficient"
     },
     {
       "name": "npm",
-      "icon": "devicons-npm",
+      "icon": "devicon-npm-original-wordmark",
+      "level": "Proficient"
+    },
+    {
+      "name": "yarn",
+      "icon": "devicon-yarn-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "jest",
+      "icon": "devicon-jest-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "mocha",
+      "icon": "devicon-mocha-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "jasmine",
+      "icon": "devicon-jasmine-original",
+      "level": "Proficient"
+    },
+    {
+      "name": "cypress",
+      "icon": "devicon-cypress-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "jenkins",
+      "icon": "devicon-jenkins-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "github actions",
+      "icon": "devicon-githubactions-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "git",
+      "icon": "devicon-git-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "docker",
+      "icon": "devicon-docker-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "kubernetes",
+      "icon": "devicon-kubernetes-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "aws",
+      "icon": "devicon-amazonwebservices-original",
+      "level": "Proficient"
+    },
+    {
+      "name": "nginx",
+      "icon": "devicon-nginx-original",
+      "level": "Proficient"
+    },
+    {
+      "name": "circleci",
+      "icon": "devicon-circleci-plain",
+      "level": "Proficient"
+    },
+    {
+      "name": "gitlab ci",
+      "icon": "devicon-gitlab-plain",
       "level": "Proficient"
     }
   ],
@@ -248,20 +339,26 @@
   "accomplishment": [
     {
       "id": 1,
-      "text": "Quarterly Appreciation Award",
-      "date": "Aug 2015",
+      "text": "Leader of the Year Award",
+      "date": "Feb 2023",
       "company": "Sigma Infosolutions Ltd"
     },
     {
       "id": 2,
-      "text": "Spot Award",
-      "date": "Oct 2014",
+      "text": "Quarterly Appreciation Award",
+      "date": "Aug 2016",
       "company": "Sigma Infosolutions Ltd"
     },
     {
       "id": 3,
+      "text": "Spot Award",
+      "date": "Oct 2015",
+      "company": "Sigma Infosolutions Ltd"
+    },
+    {
+      "id": 4,
       "text": "Debut Employee",
-      "date": "Nov 2010",
+      "date": "March 2011",
       "company": "Sigma Infosolutions Ltd"
     }
   ]

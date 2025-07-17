@@ -186,6 +186,10 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+.text-md-right {
+  text-align: right;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
